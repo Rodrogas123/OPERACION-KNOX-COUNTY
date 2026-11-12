@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operación Extracción - FPS</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+      { "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      } }
+    </script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div id="crosshair">+</div>
+    <div id="objective"></div>
+    <div id="toast"></div>
+    <div id="hud-container">
+        <div id="weapon-name">Pistola Beretta</div>
+        <div id="ammo-display"><span id="current-ammo">15</span> / <span id="reserve-ammo">45</span></div>
+        <div id="hotbar">
+            <div id="slot-1" class="hotbar-slot active"><span class="slot-number">1</span><span class="slot-label">Pistola</span></div>
+            <div id="slot-2" class="hotbar-slot"><span class="slot-number">2</span><span class="slot-label">Rifle M16</span></div>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <h1 id="overlay-title"></h1>
+        <p id="overlay-sub"></p>
+        <small>WASD mover · Ratón apuntar · Clic disparar · R recargar · 1/2 armas</small>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
